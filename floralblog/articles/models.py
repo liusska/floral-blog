@@ -9,3 +9,5 @@ class Article(models.Model):
     # add in thumbnail
     # add author
 
+    def __str__(self):
+        return self.title
