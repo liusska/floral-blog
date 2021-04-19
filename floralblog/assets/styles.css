@@ -1,7 +1,7 @@
 body{
     background-color: #0f121f;
-    background-image: url('roses.jpg');
-    background-repeat-y: no-repeat;
+    background-image: url('wallpaper.jpg');
+    background-repeat-y: repeat;
     color: #fff;
 }
 
