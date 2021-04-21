@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="wrapper">
-  <h1><a href="{% url 'home' %}"><img src="{% static 'logo.png' %}" alt=""/></a></h1>
+  <h2><a href="{% url 'home' %}" class="home">Floral Blog</a></h2>
       <nav>
         <ul>
             {% if user.is_authenticated %}
@@ -33,3 +33,5 @@
   </header>
 </body>
 </html>
+
+{##bd064e#}
