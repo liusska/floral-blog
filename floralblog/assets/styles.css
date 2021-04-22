@@ -30,6 +30,10 @@ div.wrapper > h1{
     font-size: 2.4em
 }
 
+div.success > h3, h4{
+    text-align: center;
+}
+
 header{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -87,9 +91,6 @@ nav button{
     padding: 0;
 }
 
-.article-detail  .article img{
-    max-width: 100%;
-}
 
 .article-detail  .article h2{
     text-align: center;
@@ -157,4 +158,12 @@ a.home{
     font-size: 20px;
     border-radius: 4px;
     margin: 10px 0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  max-width: 100%;
 }

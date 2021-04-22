@@ -1,0 +1,19 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+    <h3> Contact</h3>
+    <form class="site-form" action="{% url 'contact:success' %}" method="POST">
+
+        <label for="id_username">Enter your name:</label>
+        <input type="text" maxlength="50" id="id_username">
+        <hr>
+        <label for="id_message">Message: </label>
+        <textarea id="id_message" maxlength="500" cols="50" rows="10"></textarea>
+        <hr>
+        <label for="id_email">Enter your email:</label>
+        <input type="email" maxlength="50" id="id_email">
+        <hr>
+        <input type="submit" value="Send">
+    {% csrf_token %}
+    </form>
+{% endblock %}
