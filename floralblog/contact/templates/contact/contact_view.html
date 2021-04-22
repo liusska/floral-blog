@@ -1,0 +1,12 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+    <h1>Contact Us</h1>
+    <form class="site-form" method="post" action="{% url 'contact:success' %}">
+      {% csrf_token %}
+        {{ form.as_p }}
+          <div>
+              <input type="submit" value="Send">
+          </div>
+    </form>
+{% endblock %}
